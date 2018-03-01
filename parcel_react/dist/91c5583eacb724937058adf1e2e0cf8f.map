@@ -1,0 +1,1 @@
+{"version":3,"sources":["src/pages/about.js"],"names":["console","log"],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAAA,QAAQC,GAAR,CAAY,OAAZ","file":"91c5583eacb724937058adf1e2e0cf8f.map","sourcesContent":["console.log('about');"]}
