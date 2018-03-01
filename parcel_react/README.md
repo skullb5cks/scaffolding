@@ -1,4 +1,4 @@
-# install
+# Install
 
 1. parcel
 2. express
@@ -7,7 +7,7 @@
 5. enzyme
 6. esdoc
 
-# folder structure
+# Directory Structure
 
 ```bash
 ├── ...     
