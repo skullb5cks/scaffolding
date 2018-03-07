@@ -19,6 +19,8 @@
 // render()
 // store.subscribe(render)
 
+/* global document */
+
 import React from 'react';
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
@@ -26,15 +28,15 @@ import { createStore } from 'redux';
 import reducers from './pages/reducers';
 import App from './pages/app';
 
-let store = createStore(reducers)
+const store = createStore(reducers);
 
 render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
-  document.getElementById('app')
-)
+    <Provider store={store}>
+        <App />
+    </Provider>,
+    document.getElementById('app')
+);
 
 if (module.hot) {
-  module.hot.accept();
+    module.hot.accept();
 }

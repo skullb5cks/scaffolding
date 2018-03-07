@@ -24,8 +24,17 @@ module.exports = {
         new webpack.NamedModulesPlugin()
     ],
     module: {
-        loaders: [
-            { test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' }
+        rules: [
+            {
+              test: /\.(js|jsx)$/,
+              exclude: /node_modules/,
+              use: ['babel-loader']
+            },
+            {
+              test: /\.js$/,
+              exclude: /node_modules/,
+              use: ['babel-loader', 'eslint-loader']
+            }
         ]
     },
     node: {

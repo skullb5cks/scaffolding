@@ -10,17 +10,17 @@ const navigation = (state = initialState, action) => {
     } = action;
 
     switch (type) {
-        case 'ADD_ITEM':
-            return [
-                ...state,
-                {
-                    label,
-                    index
-                }
-            ];
-        default:
-            return state;
+    case 'ADD_ITEM':
+        return [
+            ...state,
+            {
+                label,
+                index
+            }
+        ];
+    default:
+        return state;
     }
-}
+};
 
 export default navigation;

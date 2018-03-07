@@ -1,11 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import NavigationItem from './NavigationItem';
 
 class Navigation extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         const styles = {
             backgroundColor: 'red'
@@ -13,13 +9,11 @@ class Navigation extends React.Component {
 
         return (
             <div data-area="navigation" style={styles}>
-                <NavigationItem 
+                <NavigationItem
                     label="DASHBOARD"
-                    onClick={() => {
-                        console.log('DASHBOARD');
-                    }}
+                    onClick={() => { console.log('DASHBOARD'); }}
                 />
-                <NavigationItem 
+                <NavigationItem
                     label="MY"
                     onClick={() => {
                         console.log('MY');

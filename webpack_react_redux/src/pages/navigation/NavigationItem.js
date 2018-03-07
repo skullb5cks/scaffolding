@@ -1,18 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 class NavigationItem extends React.Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            selectedIndex: props.selectedIndex
-        };
-    }
-
     render() {
         const {
-            label,
-            index
+            label
         } = this.props;
 
         return (
