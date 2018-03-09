@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://gitlab.coupang.net/palmisland/issue.git"
+    "url": ""
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
