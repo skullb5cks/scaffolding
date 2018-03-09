@@ -1,6 +1,4 @@
 {
-    // "extends": "airbnb",
-    // "extends": "eslint:recommended",
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended"
@@ -14,7 +12,7 @@
         "quotes": ["error", "single"],
         "semi": ["error", "always"],
         "no-cond-assign": ["error", "always"],
-        "no-console": 2,
+        "no-console": 0,
         "indent": ["error", 4],
         "react/jsx-indent": ["error", 4],
         "react/jsx-indent-props": [4, "tab"],
