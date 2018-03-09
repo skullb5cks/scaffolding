@@ -17,26 +17,21 @@ module.exports = {
         publicPath: '/assets/',
         proxy: {
             '/translate': 'http://127.0.0.1:3000/'
-        }
+        },
+        port: 9000
+    },
+    module: {
+        rules: [
+            { test: /\.js$/, exclude: /node_modules/, use: ['babel-loader', 'eslint-loader'] },
+            { test: /\.css$/, use: [ 'style-loader', 'css-loader' ]},
+            { test: /\.scss$/, use: [ 'style-loader', 'css-loader', 'sass-loader']},
+            { test: /\.(png|jpg|gif)$/, use: 'file-loader'},
+        ]
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(), // Enable HMR
         new webpack.NamedModulesPlugin()
     ],
-    module: {
-        rules: [
-            {
-              test: /\.(js|jsx)$/,
-              exclude: /node_modules/,
-              use: ['babel-loader']
-            },
-            {
-              test: /\.js$/,
-              exclude: /node_modules/,
-              use: ['babel-loader', 'eslint-loader']
-            }
-        ]
-    },
     node: {
         fs: 'empty' // avoids error messages 
     }
