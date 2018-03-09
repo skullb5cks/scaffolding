@@ -1,36 +1,35 @@
 {
-  "name": "boilerplate",
+  "name": "issue-interfaces-web",
   "version": "1.0.0",
-  "description": "",
+  "description": "issue-interfaces-web static resources",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "start": "webpack-dev-server --env=develop --open",
-    "dev": "webpack --env=develop --progress --profile --colors",
-    "release": "webpack --env=release --progress --profile --colors"
+    "start": "webpack-dev-server --env=dev",
+    "dev": "webpack --env=dev --progress --profile --colors",
+    "proxy": "node server.js",
+    "build": "webpack --env=product --progress --profile --colors"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/skullb5cks/boilerplate.git"
+    "url": ""
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/skullb5cks/boilerplate/issues"
-  },
-  "homepage": "https://github.com/skullb5cks/boilerplate#readme",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
+    "css-loader": "^0.28.10",
     "eslint": "^4.18.2",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-loader": "^2.0.0",
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.11",
+    "node-sass": "^4.7.2",
     "redux-devtools": "^3.4.0",
     "request": "^2.81.0",
+    "sass-loader": "^6.0.7",
+    "style-loader": "^0.20.2",
     "webpack": "^3.0.0",
     "webpack-dev-server": "^2.5.0"
   },
